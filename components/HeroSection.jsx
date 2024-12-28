@@ -4,7 +4,7 @@ import Photo from '../public/Photo.jpg'
 
 const HeroSection = () => {
     return (
-        <div className='flex gap-10 w-full p-2 py-4 pt-20'>
+        <div id="home" className='flex gap-10 w-full p-2 py-4 pt-20'>
             <div className="flex-1 flex flex-col gap-2">
                 <div className="font-bold text-6xl">Guru Darshan</div>
                 <div className="text-sm pb-8">Lorem ipsum dolor sit.</div>
