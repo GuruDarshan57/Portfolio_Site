@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
 import About from "@/components/About";
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/components/Hero";
 import Links from "@/components/Links";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 
 export default function Home() {
