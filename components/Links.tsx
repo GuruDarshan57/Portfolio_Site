@@ -31,7 +31,7 @@ const links = [
 
 const Links = () => {
   return (
-    <div className="bottom-5 bg-white dark:bg-black fixed">
+    <div className="bottom-5 fixed">
       <FloatingDock items={links} />
     </div>
   );

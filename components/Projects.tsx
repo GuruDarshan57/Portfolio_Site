@@ -24,7 +24,7 @@ const projects: project[] = [
   },
   {
     name: "Prompt Hub",
-    imageSrc: "/static/PromptHub.jpeg",
+    imageSrc: "/static/PromptHub.png",
     description:
       "An open-source platform for sharing, discovering creative prompts and a user-friendly interface.",
     techStack: ["NextJS", "ReactJS", "TailwindCSS", "NextAuth", "MongoDB"],
