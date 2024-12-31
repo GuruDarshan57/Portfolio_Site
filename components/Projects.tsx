@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 const projects: project[] = [
   {
     name: "X-Clone",
-    imageSrc: "/static/X-Clone.png",
+    imageSrc: "/X-Clone.png",
     description:
       "A Twitter-Clone social built with a modern tech stack, featuring optimized frontend and backend architecture.",
     techStack: [
@@ -24,7 +24,7 @@ const projects: project[] = [
   },
   {
     name: "Prompt Hub",
-    imageSrc: "/static/PromptHub.png",
+    imageSrc: "/PromptHub.png",
     description:
       "An open-source platform for sharing, discovering creative prompts and a user-friendly interface.",
     techStack: ["NextJS", "ReactJS", "TailwindCSS", "NextAuth", "MongoDB"],
@@ -33,7 +33,7 @@ const projects: project[] = [
   },
   {
     name: "URL Shortener",
-    imageSrc: "/static/URL-Shortner.png",
+    imageSrc: "/URL-Shortner.png",
     description:
       "A robust URL shortening service with user authentication, data visualization dashboards, and intutive interface.",
     techStack: [
@@ -51,9 +51,9 @@ const projects: project[] = [
 
 const Projects = () => {
   return (
-    <div id="projects" className="flex flex-col gap-8 w-full py-10">
+    <div id="projects" className="flex flex-col gap-8 w-full p-2 py-10">
       <h2 className="font-bold text-4xl tracking-wide">Projects</h2>
-      <div className="grid grid-cols-2 gap-x-10 gap-y-8 self-center">
+      <div className="flex flex-col gap-x-10 gap-y-8 self-center">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}

@@ -4,8 +4,11 @@ import Photo from "../public/Photo.jpg";
 
 const HeroSection = () => {
   return (
-    <div id="home" className="flex gap-10 w-full p-2 py-4 pt-20">
-      <div className="flex-1 flex flex-col gap-2">
+    <div
+      id="home"
+      className="flex flex-col sm:flex-row gap-10 w-full p-2 py-4 pt-20"
+    >
+      <div className="flex-1 order-2 sm:order-1 flex flex-col gap-2">
         <div className="font-bold text-6xl">Guru Darshan</div>
         <div className="text-sm pb-8 flex flex-wrap gap-2">
           {["Full-Stack Dev", "Web-3", "ML-Explorer"].map((tag, index) => (
@@ -24,7 +27,7 @@ const HeroSection = () => {
           together!
         </div>
       </div>
-      <div className="flex ">
+      <div className="flex order-1 sm:order-2">
         <Image
           src={"/static/Photo.jpg"}
           height={400}

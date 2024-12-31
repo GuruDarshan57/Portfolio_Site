@@ -31,7 +31,7 @@ const links = [
 
 const Links = () => {
   return (
-    <div className="bottom-5 fixed">
+    <div className="right-3 bottom-4 sm:right-auto sm:bottom-5 fixed">
       <FloatingDock items={links} />
     </div>
   );

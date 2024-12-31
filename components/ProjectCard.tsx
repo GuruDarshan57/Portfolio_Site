@@ -14,7 +14,7 @@ const ProjectCard = ({
   liveLink,
 }: project) => {
   return (
-    <div className="border-2 flex flex-col gap-4 w-80 min-h-80 p-4 rounded-md">
+    <div className="border-2 flex flex-col gap-4 w-full min-h-80 p-4 rounded-md">
       <Image
         src={imageSrc}
         height={1000}

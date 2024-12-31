@@ -16,9 +16,9 @@ const navElements: navElement[] = [
 ];
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
-    <div className="w-1/2 bg-white dark:bg-black min-h-24 flex justify-between items-center px-1">
+    <div className="w-11/12 sm:w-3/4 lg:w-2/3 xl:w-1/2 bg-white dark:bg-black min-h-24 flex justify-between items-center px-1">
       <div
         className="cursor-pointer p-2 place-content-center border-[1.4px] dark:text-cyan-600 dark:border-cyan-600 rounded-md"
         onClick={() => {
