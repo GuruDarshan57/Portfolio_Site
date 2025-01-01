@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { project } from "@/types";
+import { techDict } from "@/data";
 import Image from "next/image";
 import { FaGithubSquare } from "react-icons/fa";
 import { PiLinkSimpleFill } from "react-icons/pi";
@@ -36,12 +37,14 @@ const ProjectCard = ({
       <div className="text-justify">{description}</div>
       <div className="flex flex-wrap gap-2">
         {techStack.map((tech, index) => (
-          <div
+          <Link
+            href={techDict[tech]}
             key={index}
-            className="border-2 p-0.5 px-1.5 rounded-md tracking-wide text-sm font-bold"
+            target="_blank"
+            className="border-2 p-0.5 px-1.5 rounded-md tracking-wide text-sm font-bold cursor-pointer"
           >
             {tech}
-          </div>
+          </Link>
         ))}
       </div>
     </div>

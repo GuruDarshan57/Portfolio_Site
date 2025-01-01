@@ -11,7 +11,7 @@ const projects: project[] = [
     techStack: [
       "NextJS",
       "Codegen",
-      "Typescript",
+      "TypeScript",
       "NodeJS",
       "GraphQL",
       "Prisma ORM",

@@ -1,4 +1,5 @@
-import React from "react";
+import Link from "next/link";
+import { techDict } from "@/data";
 
 const About = () => {
   return (
@@ -17,24 +18,26 @@ const About = () => {
       <div className="flex flex-wrap gap-2">
         {[
           "NextJS",
-          "React",
-          "Node.js",
-          "Express",
+          "ReactJS",
+          "NodeJS",
+          "ExpressJS",
           "Java",
           "JavaScript",
           "TypeScript",
           "TailwindCSS",
           "SQL",
-          "Postgres",
+          "PostgreSQL",
           "MongoDB",
           "Git",
         ].map((skill, index) => (
-          <div
+          <Link
+            href={techDict[skill]}
             key={index}
-            className="border-2 p-0.5 px-1.5 rounded-md tracking-wide text-sm font-bold"
+            target="_blank"
+            className="border-2 p-0.5 px-1.5 rounded-md tracking-wide text-sm font-bold cursor-pointer"
           >
             {skill}
-          </div>
+          </Link>
         ))}
       </div>
     </div>

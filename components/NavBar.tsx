@@ -32,11 +32,15 @@ const Navbar = () => {
           <IoIosMoon className="size-4" />
         )}
       </div>
-      <div className="border-[1.4px] border-slate-700 dark:border-slate-300 flex font-semibold items-center tracking-wide rounded-md text-sm">
+      <div className="border-[1.4px] border-slate-700 dark:border-slate-300 p-1.5 flex font-semibold items-center tracking-wide rounded-md text-sm">
         {navElements.map((nav_ele, index) => (
           <Link
             key={index}
-            className="p-1.5 px-4 hover:bg-slate-200 hover:dark:bg-slate-800 rounded-md transition-colors duration-700"
+            className={`px-4 ${
+              index % 2 != 0
+                ? "border-black dark:border-white border-l-[1px] border-r-[1px]"
+                : ""
+            }`}
             href={nav_ele.href}
           >
             {nav_ele.name}
