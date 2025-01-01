@@ -1,53 +1,6 @@
 import React from "react";
-import { project } from "@/types";
 import ProjectCard from "./ProjectCard";
-
-const projects: project[] = [
-  {
-    name: "X-Clone",
-    imageSrc: "/X-Clone.png",
-    description:
-      "A Twitter-Clone social built with a modern tech stack, featuring optimized frontend and backend architecture.",
-    techStack: [
-      "NextJS",
-      "Codegen",
-      "TypeScript",
-      "NodeJS",
-      "GraphQL",
-      "Prisma ORM",
-      "PostgreSQL",
-      "Redis",
-      "AWS",
-    ],
-    gitLink: "https://github.com/GuruDarshan57/X_Clone",
-    liveLink: "https://x-clone-g57.vercel.app/",
-  },
-  {
-    name: "Prompt Hub",
-    imageSrc: "/PromptHub.png",
-    description:
-      "An open-source platform for sharing, discovering creative prompts and a user-friendly interface.",
-    techStack: ["NextJS", "ReactJS", "TailwindCSS", "NextAuth", "MongoDB"],
-    gitLink: "https://github.com/GuruDarshan57/Prompt-Hub",
-    liveLink: "https://prompt-hub-zeta.vercel.app/",
-  },
-  {
-    name: "URL Shortener",
-    imageSrc: "/URL-Shortner.png",
-    description:
-      "A robust URL shortening service with user authentication, data visualization dashboards, and intutive interface.",
-    techStack: [
-      "ReactJS",
-      "TailwindCSS",
-      "NodeJS",
-      "ExpressJS",
-      "ChartJS",
-      "MongoDB",
-    ],
-    gitLink: "https://github.com/GuruDarshan57/URL-Shortner-Frontend",
-    liveLink: "https://urlshortner-g57.vercel.app/",
-  },
-];
+import { projects } from "@/data";
 
 const Projects = () => {
   return (

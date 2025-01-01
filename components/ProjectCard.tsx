@@ -4,7 +4,7 @@ import { project } from "@/types";
 import { techDict } from "@/data";
 import Image from "next/image";
 import { FaGithubSquare } from "react-icons/fa";
-import { PiLinkSimpleFill } from "react-icons/pi";
+import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
 const ProjectCard = ({
   name,
@@ -27,10 +27,10 @@ const ProjectCard = ({
         <div className="font-bold tracking-wide">{name}</div>
         <div className="flex gap-2 items-center">
           <Link href={gitLink} className="" target="_blank">
-            <FaGithubSquare className="size-7" />
+            <FaGithubSquare className="size-6" />
           </Link>
           <Link href={liveLink} className="" target="_blank">
-            <PiLinkSimpleFill className="size-8" />
+            <FaExternalLinkSquareAlt className="size-6" />
           </Link>
         </div>
       </div>

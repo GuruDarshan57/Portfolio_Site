@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { heroTags, heroText } from "@/data";
 
 const HeroSection = () => {
   return (
@@ -10,7 +11,7 @@ const HeroSection = () => {
       <div className="flex-1 order-2 sm:order-1 flex flex-col gap-2">
         <div className="font-bold text-6xl">Guru Darshan</div>
         <div className="text-sm pb-8 flex flex-wrap gap-2">
-          {["Full-Stack Dev", "Web-3", "ML-Explorer"].map((tag, index) => (
+          {heroTags.map((tag, index) => (
             <div
               key={index}
               className="bg-slate-200 dark:bg-slate-800 p-0.5 px-2 rounded-md tracking-wide text-sm font-bold"
@@ -19,12 +20,7 @@ const HeroSection = () => {
             </div>
           ))}
         </div>
-        <div className="text-justify text-sm">
-          Driven by the thirst for knowledge and a passion for tech. Eager to
-          learn, grow, and contribute through impactful projects and
-          collaborative experiences. Let’s connect and create something amazing
-          together!
-        </div>
+        <div className="text-justify text-sm">{heroText}</div>
       </div>
       <div className="flex order-1 sm:order-2">
         <Image

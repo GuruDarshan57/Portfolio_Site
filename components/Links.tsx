@@ -9,22 +9,22 @@ import { FloatingDock } from "./ui/FloatingDock";
 const links = [
   {
     title: "Github",
-    icon: <FaSquareGithub />,
+    icon: <FaSquareGithub className="size-7" />,
     href: "https://github.com/GuruDarshan57",
   },
   {
     title: "X",
-    icon: <FaSquareXTwitter />,
+    icon: <FaSquareXTwitter className="size-7" />,
     href: "https://x.com/GuruDarshan_573",
   },
   {
     title: "LinkedIn",
-    icon: <FaLinkedin />,
+    icon: <FaLinkedin className="size-7" />,
     href: "https://www.linkedin.com/in/gurudarshan57/",
   },
   {
     title: "Mail",
-    icon: <IoMail />,
+    icon: <IoMail className="size-7" />,
     href: "guru573116@gmail.com",
   },
 ];
