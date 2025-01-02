@@ -5,12 +5,8 @@ import Hero from "@/components/Hero";
 import Links from "@/components/Links";
 import Navbar from "@/components/NavBar";
 import Projects from "@/components/Projects";
-import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    document.body.classList.toggle("dark");
-  }, []);
   return (
     <div className="dark:bg-black dark:text-white flex flex-col items-center h-screen w-screen relative">
       <Navbar />

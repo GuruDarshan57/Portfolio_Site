@@ -9,11 +9,12 @@ const About = () => {
       <div className="flex flex-wrap gap-2">
         {aboutSkillTags.map((skill, index) => (
           <Link
-            href={techDict[skill]}
+            href={techDict[skill].url}
             key={index}
             target="_blank"
-            className="border-2 p-0.5 px-1.5 rounded-md tracking-wide text-sm font-bold cursor-pointer"
+            className="border-2 p-0.5 px-1.5 flex gap-2 items-center justify-center rounded-md tracking-wide text-sm font-bold cursor-pointer"
           >
+            {techDict[skill].icon}
             {skill}
           </Link>
         ))}

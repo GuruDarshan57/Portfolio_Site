@@ -1,25 +1,51 @@
+import { ReactNode } from "react";
 import { project } from "./types";
+import { RiNextjsLine } from "react-icons/ri";
+import { TbBrandTypescript } from "react-icons/tb";
+import { DiNodejs } from "react-icons/di";
+import { SiGraphql } from "react-icons/si";
+import { TbBrandPrisma } from "react-icons/tb";
+import { SiPostgresql } from "react-icons/si";
+import { DiRedis } from "react-icons/di";
+import { FaAws } from "react-icons/fa6";
+import { FaReact } from "react-icons/fa6";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
+import { RiJavascriptLine } from "react-icons/ri";
+import { DiMysql } from "react-icons/di";
+import { FaSquareGithub } from "react-icons/fa6";
+import { FaChartPie } from "react-icons/fa6";
+import { FaShieldHalved } from "react-icons/fa6";
+import { LuSquareDot } from "react-icons/lu";
 
-export const techDict: Record<string, string> = {
-  NextJS: "https://nextjs.org/",
-  Codegen: "https://www.graphql-codegen.com/",
-  TypeScript: "https://www.typescriptlang.org/",
-  NodeJS: "https://nodejs.org/",
-  GraphQL: "https://graphql.org/",
-  "Prisma ORM": "https://www.prisma.io/",
-  PostgreSQL: "https://www.postgresql.org/",
-  Redis: "https://redis.io/",
-  AWS: "https://aws.amazon.com/",
-  ReactJS: "https://reactjs.org/",
-  TailwindCSS: "https://tailwindcss.com/",
-  NextAuth: "https://next-auth.js.org/",
-  MongoDB: "https://www.mongodb.com/",
-  ExpressJS: "https://expressjs.com/",
-  ChartJS: "https://www.chartjs.org/",
-  Java: "https://www.java.com/",
-  JavaScript: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  SQL: "https://www.sql.org/",
-  Git: "https://git-scm.com/",
+export const techDict: Record<string, { url: string; icon: ReactNode }> = {
+  NextJS: { url: "https://nextjs.org/", icon: <RiNextjsLine /> },
+  Codegen: { url: "https://www.graphql-codegen.com/", icon: <LuSquareDot /> },
+  TypeScript: {
+    url: "https://www.typescriptlang.org/",
+    icon: <TbBrandTypescript />,
+  },
+  NodeJS: { url: "https://nodejs.org/", icon: <DiNodejs /> },
+  GraphQL: { url: "https://graphql.org/", icon: <SiGraphql /> },
+  "Prisma ORM": { url: "https://www.prisma.io/", icon: <TbBrandPrisma /> },
+  PostgreSQL: { url: "https://www.postgresql.org/", icon: <SiPostgresql /> },
+  Redis: { url: "https://redis.io/", icon: <DiRedis /> },
+  AWS: { url: "https://aws.amazon.com/", icon: <FaAws /> },
+  ReactJS: { url: "https://reactjs.org/", icon: <FaReact /> },
+  TailwindCSS: { url: "https://tailwindcss.com/", icon: <RiTailwindCssFill /> },
+  NextAuth: { url: "https://next-auth.js.org/", icon: <FaShieldHalved /> },
+  MongoDB: { url: "https://www.mongodb.com/", icon: <SiMongodb /> },
+  ExpressJS: { url: "https://expressjs.com/", icon: <SiExpress /> },
+  ChartJS: { url: "https://www.chartjs.org/", icon: <FaChartPie /> },
+  Java: { url: "https://www.java.com/", icon: <FaJava /> },
+  JavaScript: {
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    icon: <RiJavascriptLine />,
+  },
+  SQL: { url: "https://www.sql.org/", icon: <DiMysql /> },
+  Git: { url: "https://git-scm.com/", icon: <FaSquareGithub /> },
 };
 
 export const heroTags = ["Full-Stack Dev", "Web-3", "ML-Explorer"];

@@ -38,12 +38,13 @@ const ProjectCard = ({
       <div className="flex flex-wrap gap-2">
         {techStack.map((tech, index) => (
           <Link
-            href={techDict[tech]}
+            href={techDict[tech].url}
             key={index}
             target="_blank"
-            className="border-2 p-0.5 px-1.5 rounded-md tracking-wide text-sm font-bold cursor-pointer"
+            className="border-2 p-0.5 px-1.5 flex gap-2 items-center justify-center rounded-md tracking-wide text-sm font-bold cursor-pointer"
           >
-            {tech}
+            {techDict[tech].icon}
+            <span>{tech}</span>
           </Link>
         ))}
       </div>
