@@ -41,7 +41,7 @@ const ProjectCard = ({
             href={techDict[tech].url}
             key={index}
             target="_blank"
-            className="border-2 p-0.5 px-1.5 flex gap-2 items-center justify-center rounded-md tracking-wide text-sm font-bold cursor-pointer"
+            className="border-2 p-0.5 px-1.5 flex gap-2 items-center justify-center rounded-md tracking-wider text-sm font-bold cursor-pointer"
           >
             {techDict[tech].icon}
             <span>{tech}</span>

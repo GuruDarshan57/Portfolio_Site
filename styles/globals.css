@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -10,6 +10,7 @@ html{
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: "Jost", serif;
 }
 
 body {
