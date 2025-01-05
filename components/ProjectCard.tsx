@@ -34,7 +34,7 @@ const ProjectCard = ({
           </Link>
         </div>
       </div>
-      <div className="text-justify">{description}</div>
+      <div className="text-justify tracking-wide">{description}</div>
       <div className="flex flex-wrap gap-2">
         {techStack.map((tech, index) => (
           <Link

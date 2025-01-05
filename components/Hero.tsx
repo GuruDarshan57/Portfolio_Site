@@ -9,7 +9,7 @@ const HeroSection = () => {
       className="flex flex-col sm:flex-row gap-10 w-full p-2 py-4 pt-20"
     >
       <div className="flex-1 order-2 sm:order-1 flex flex-col gap-2">
-        <div className="font-bold text-6xl">Guru Darshan</div>
+        <div className="font-bold text-7xl">Guru Darshan</div>
         <div className="text-sm pb-8 flex flex-wrap gap-2">
           {heroTags.map((tag, index) => (
             <div
@@ -20,7 +20,7 @@ const HeroSection = () => {
             </div>
           ))}
         </div>
-        <div className="text-justify text-sm">{heroText}</div>
+        <div className="text-justify tracking-wide leading-7">{heroText}</div>
       </div>
       <div className="flex order-1 sm:order-2">
         <Image

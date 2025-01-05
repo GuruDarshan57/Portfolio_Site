@@ -3,7 +3,7 @@ import { project } from "./types";
 import { RiNextjsLine } from "react-icons/ri";
 import { TbBrandTypescript } from "react-icons/tb";
 import { DiNodejs } from "react-icons/di";
-import { SiGraphql } from "react-icons/si";
+import { SiGraphql, SiJsonwebtokens } from "react-icons/si";
 import { TbBrandPrisma } from "react-icons/tb";
 import { SiPostgresql } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
@@ -33,7 +33,7 @@ export const techDict: Record<string, { url: string; icon: ReactNode }> = {
   PostgreSQL: { url: "https://www.postgresql.org/", icon: <SiPostgresql /> },
   Redis: { url: "https://redis.io/", icon: <DiRedis /> },
   AWS: { url: "https://aws.amazon.com/", icon: <FaAws /> },
-  ReactJS: { url: "https://reactjs.org/", icon: <FaReact /> },
+  React: { url: "https://reactjs.org/", icon: <FaReact /> },
   TailwindCSS: { url: "https://tailwindcss.com/", icon: <RiTailwindCssFill /> },
   NextAuth: { url: "https://next-auth.js.org/", icon: <FaShieldHalved /> },
   MongoDB: { url: "https://www.mongodb.com/", icon: <SiMongodb /> },
@@ -44,6 +44,7 @@ export const techDict: Record<string, { url: string; icon: ReactNode }> = {
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     icon: <RiJavascriptLine />,
   },
+  JWT: { url: "https://jwt.io/", icon: <SiJsonwebtokens /> },
   SQL: { url: "https://www.sql.org/", icon: <DiMysql /> },
   Git: { url: "https://git-scm.com/", icon: <FaSquareGithub /> },
 };
@@ -62,13 +63,12 @@ export const projects: project[] = [
     techStack: [
       "NextJS",
       "Codegen",
-      "TypeScript",
       "NodeJS",
-      "GraphQL",
-      "Prisma ORM",
       "PostgreSQL",
       "Redis",
       "AWS",
+      "GraphQL",
+      "Prisma ORM",
     ],
     gitLink: "https://github.com/GuruDarshan57/X_Clone",
     liveLink: "https://x-clone-g57.vercel.app/",
@@ -78,7 +78,7 @@ export const projects: project[] = [
     imageSrc: "/PromptHub.png",
     description:
       "An open-source platform for sharing, discovering creative prompts and a user-friendly interface.",
-    techStack: ["NextJS", "ReactJS", "TailwindCSS", "NextAuth", "MongoDB"],
+    techStack: ["React", "NextJS", "NextAuth", "TailwindCSS", "MongoDB"],
     gitLink: "https://github.com/GuruDarshan57/Prompt-Hub",
     liveLink: "https://prompt-hub-zeta.vercel.app/",
   },
@@ -88,12 +88,13 @@ export const projects: project[] = [
     description:
       "A robust URL shortening service with user authentication, data visualization dashboards, and intutive interface.",
     techStack: [
-      "ReactJS",
+      "React",
       "TailwindCSS",
-      "NodeJS",
-      "ExpressJS",
+      "JWT",
       "ChartJS",
+      "NodeJS",
       "MongoDB",
+      "ExpressJS",
     ],
     gitLink: "https://github.com/GuruDarshan57/URL-Shortner-Frontend",
     liveLink: "https://urlshortner-g57.vercel.app/",
@@ -105,7 +106,7 @@ export const aboutDescription =
 
 export const aboutSkillTags = [
   "NextJS",
-  "ReactJS",
+  "React",
   "NodeJS",
   "ExpressJS",
   "Java",
