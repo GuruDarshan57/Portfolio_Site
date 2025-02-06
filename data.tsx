@@ -56,8 +56,8 @@ export const heroText =
 
 export const projects: project[] = [
   {
-    name: "X-Clone",
-    imageSrc: "/X-Clone.png",
+    name: "Twitter-Clone",
+    imageSrc: "/Twitter-Clone.png",
     description:
       "A Twitter-Clone social built with a modern tech stack, featuring optimized frontend and backend architecture.",
     techStack: [
