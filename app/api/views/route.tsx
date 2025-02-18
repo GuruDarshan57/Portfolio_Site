@@ -1,5 +1,4 @@
 import { Redis } from '@upstash/redis'
-import { view } from 'motion/react';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 type ResponseData = {
