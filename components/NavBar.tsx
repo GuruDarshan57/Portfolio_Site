@@ -16,7 +16,7 @@ const navElements: navElement[] = [
 ];
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className="w-11/12 sm:w-3/4 lg:w-2/3 xl:w-1/2 bg-white dark:bg-black min-h-24 flex justify-between items-center px-1">
       <div

@@ -4,7 +4,7 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
-import { FloatingDock } from "./ui/FloatingDock";
+import {Dock,DockIcon} from "@/components/magicui/dock"
 
 const links = [
   {
@@ -31,8 +31,14 @@ const links = [
 
 const Links = () => {
   return (
-    <div className="right-3 bottom-4 sm:right-auto sm:bottom-5 fixed">
-      <FloatingDock items={links} />
+    <div className="w-full flex justify-center items-center bottom-4 sm:right-auto sm:bottom-5 fixed">
+      <Dock className="bg-white dark:bg-black">
+        {links.map((link, index) => (
+          <DockIcon key={index} title={link.title}>
+            <Link href={link.href} target="_blank">{link.icon}</Link>
+          </DockIcon>
+        ))}
+      </Dock>
     </div>
   );
 };
