@@ -22,7 +22,7 @@ export default function Home() {
   const getViews = async () => {
     try{
       const res=await axios.get("/api/views")
-      setViews(parseInt(res.data))
+      setViews(parseInt(res.data.views))
     }
     catch(err:any){
       console.error(err)
