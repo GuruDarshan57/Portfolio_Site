@@ -1,6 +1,5 @@
 import { Redis } from '@upstash/redis'
-import { view } from 'motion/react';
-import type { NextApiRequest, NextApiResponse } from 'next';
+import { NextResponse, NextRequest } from 'next/server';
 
 type ResponseData = {
   views: number;
@@ -17,8 +16,8 @@ const redis = new Redis({
 })
 
 export async function GET(
-  req: NextApiRequest,
-  res: NextApiResponse<ResponseData | ErrorResponse>
+  req: NextRequest,
+  res: NextResponse<ResponseData | ErrorResponse>
 ) {
   try {
     //get view count
