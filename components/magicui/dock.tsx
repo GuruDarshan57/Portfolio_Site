@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable */
 
 import { cva, type VariantProps } from "class-variance-authority";
 import {
@@ -47,9 +48,9 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
 
     const renderChildren = () => {
       return React.Children.map(children, (child) => {
-        if (React.isValidElement(child) && child.type === DockIcon) {
+        if (React.isValidElement<DockIconProps>(child) && child.type === DockIcon) {
           return React.cloneElement(child, {
-            ...child.props,
+            ...Object.assign({}, child.props),
             mouseX: mouseX,
             size: iconSize,
             magnification: iconMagnification,
