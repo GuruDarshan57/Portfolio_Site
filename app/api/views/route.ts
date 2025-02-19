@@ -8,8 +8,7 @@ const redis = new Redis({
 })
 
 export const GET= async(
-  req: NextRequest,
-  res: NextResponse
+  req: NextRequest
 ) =>{
   try {
     //get view count
