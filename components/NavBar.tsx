@@ -20,14 +20,14 @@ const Navbar = () => {
   return (
     <div className="w-11/12 sm:w-3/4 lg:w-2/3 xl:w-1/2 bg-white dark:bg-black min-h-24 flex justify-between items-center px-1">
       <div
-        className="cursor-pointer p-2 place-content-center border-[1.4px] dark:text-cyan-600 dark:border-cyan-600 rounded-md"
+        className="cursor-pointer p-2 place-content-center border-[1.4px] dark:border-slate-500 rounded-md"
         onClick={() => {
           document.body.classList.toggle("dark");
           setDarkMode((mode) => !mode);
         }}
       >
         {darkMode ? (
-          <MdSunny className="size-4" />
+          <MdSunny className="size-4 text-yellow-400" />
         ) : (
           <IoIosMoon className="size-4" />
         )}

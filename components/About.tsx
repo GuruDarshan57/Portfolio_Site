@@ -14,7 +14,7 @@ const About = () => {
             href={techDict[skill].url}
             key={index}
             target="_blank"
-            className="border-2 p-0.5 px-1.5 flex gap-2 items-center justify-center rounded-md tracking-wide text-sm font-bold cursor-pointer"
+            className="border-2 hover:bg-slate-100 hover:dark:bg-slate-800 p-0.5 px-1.5 flex gap-2 items-center justify-center rounded-md tracking-wide text-sm font-bold cursor-pointer"
           >
             {techDict[skill].icon}
             {skill}
