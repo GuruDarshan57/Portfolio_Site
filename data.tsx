@@ -57,7 +57,7 @@ export const heroText =
 export const projects: project[] = [
   {
     name: "Twitter-Clone",
-    imageSrc: "/Twitter-Clone.png",
+    imageSrc: "/Twitter-Clone.webp",
     description:
       "A Twitter-Clone social built with a modern tech stack, featuring optimized frontend and backend architecture.",
     techStack: [
@@ -75,7 +75,7 @@ export const projects: project[] = [
   },
   {
     name: "Prompt Hub",
-    imageSrc: "/PromptHub.png",
+    imageSrc: "/PromptHub.webp",
     description:
       "An open-source platform for sharing, discovering creative prompts and a user-friendly interface.",
     techStack: ["React", "NextJS", "NextAuth", "TailwindCSS", "MongoDB"],
@@ -84,7 +84,7 @@ export const projects: project[] = [
   },
   {
     name: "URL Shortener",
-    imageSrc: "/URL-Shortner.png",
+    imageSrc: "/URL-Shortner.webp",
     description:
       "A robust URL shortening service with user authentication, data visualization dashboards, and intutive interface.",
     techStack: [

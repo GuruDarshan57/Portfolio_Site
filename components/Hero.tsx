@@ -24,7 +24,7 @@ const HeroSection = () => {
       </div>
       <div className="flex order-1 sm:order-2">
         <Image
-          src={"/Photo.png"}
+          src={"/Photo.webp"}
           height={400}
           width={200}
           className="h-24 w-20 rounded-md"
