@@ -13,6 +13,7 @@ const Utilities = () => {
           second: "numeric",
           hour12: true,
         });
+      document.querySelector(".blink_dot")?.classList.toggle("bg-transparent")
     }, 1000);
     getViews();
     return () => clearInterval(intervalId);
@@ -29,9 +30,9 @@ const Utilities = () => {
   };
   return (
     <>
-      <div className="absolute top-8 left-8 tracking-wider clock hidden sm:flex">
-        <div className="cloned_copy hidden"></div>
-        00:00:00 AM
+      <div className="absolute top-8 left-8 justify-center items-center gap-2 tracking-wider hidden sm:flex">
+        <div className="blink_dot size-2 rounded-full bg-red-500"></div>
+        <div className="clock">00:00:00 AM</div>
       </div>
       <div className="border-r-2 border-b-2 pr-2 dark:border-slate-600 absolute top-8 right-8 tracking-wider hidden sm:flex flex-col">
         <div className="text-sm">Views</div>
