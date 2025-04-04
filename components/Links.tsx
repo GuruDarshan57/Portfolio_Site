@@ -31,7 +31,7 @@ const links = [
 
 const Links = () => {
   return (
-    <div className="w-full flex justify-center items-center bottom-4 sm:right-auto sm:bottom-5 fixed">
+    <div className="w-full flex justify-center items-center bottom-8 sm:right-auto sm:bottom-5 fixed">
       <Dock className="bg-white dark:bg-black">
         {links.map((link, index) => (
           <DockIcon key={index} title={link.title}>

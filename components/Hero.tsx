@@ -22,15 +22,13 @@ const HeroSection = () => {
         </div>
         <div className="text-justify tracking-wide leading-7">{heroText}</div>
       </div>
-      <div className="flex order-1 sm:order-2">
-        <Image
-          src={"/Photo.webp"}
-          height={400}
-          width={200}
-          className="h-24 w-20 rounded-md"
-          alt="photo"
-        />
-      </div>
+      <Image
+        src={"/Photo.webp"}
+        height={400}
+        width={200}
+        className="h-24 w-20 order-1 sm:order-2 rounded-md"
+        alt="photo"
+      />
     </div>
   );
 };

@@ -17,8 +17,9 @@ const navElements: navElement[] = [
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <div className="w-11/12 sm:w-3/4 lg:w-2/3 xl:w-1/2 bg-white dark:bg-black min-h-24 flex justify-between items-center px-1">
+    <div className="w-full flex justify-between items-center px-1 bg-white dark:bg-black min-h-24 sticky top-0 left-0">
       <div
         className="cursor-pointer p-2 place-content-center border-[1.4px] dark:border-slate-500 rounded-md"
         onClick={() => {
@@ -37,9 +38,7 @@ const Navbar = () => {
           <Link
             key={index}
             className={`px-4 ${
-              index % 2 != 0
-                ? "border-black dark:border-white border-l-[1px] border-r-[1px]"
-                : ""
+              index != 0 ? "border-black dark:border-white border-l-[1px]" : ""
             }`}
             href={nav_ele.href}
           >
