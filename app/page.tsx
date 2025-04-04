@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 import Links from "@/components/Links";
 import Navbar from "@/components/NavBar";
 import Projects from "@/components/Projects";
-import Utilities from "@/components/Utilities";
+import Utilities from "@/components/Extras";
 
 
 export default function Home() {

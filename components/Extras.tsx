@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const Utilities = () => {
+const Extras = () => {
   const [views, setViews] = useState(0);
 
   useEffect(() => {
@@ -47,4 +47,4 @@ const Utilities = () => {
   );
 };
 
-export default Utilities;
+export default Extras;
