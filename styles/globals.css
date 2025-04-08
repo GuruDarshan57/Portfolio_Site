@@ -19,6 +19,11 @@ body {
   overflow-x: hidden;
 }
 
+.translucent_bg{
+  opacity: 0.95;
+  backdrop-filter: blur(6px);
+}
+
 .hidescrollbar::-webkit-scrollbar {
   display: none;
 }

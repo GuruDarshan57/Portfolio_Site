@@ -19,7 +19,7 @@ const Navbar = () => {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <div className="w-full flex justify-between items-center px-1 bg-white dark:bg-black min-h-24 sticky top-0 left-0">
+    <div className="w-full flex justify-between items-center px-1 bg-white dark:bg-black translucent_bg min-h-24 sticky top-0 left-0">
       <div
         className="cursor-pointer p-2 place-content-center border-[1.4px] dark:border-slate-500 rounded-md"
         onClick={() => {
