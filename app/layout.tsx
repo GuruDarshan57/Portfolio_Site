@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 
-import { Analytics } from "@vercel/analytics/react";
-
 export const metadata: Metadata = {
   title: "Guru Darshan",
   description:
@@ -46,9 +44,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="dark">{children}
-        <Analytics />
-      </body>
+      <body className="dark">{children}</body>
     </html>
   );
 }
